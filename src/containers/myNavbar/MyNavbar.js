@@ -8,7 +8,8 @@ import {
     Nav,
     NavItem
 } from 'reactstrap';
-import Search from '../../components/search/Search';
+import Search from '../../components/Search/Search';
+import './MyNavbar.css';
 
 
 const MyNavbar = (props) => {
@@ -17,7 +18,7 @@ const MyNavbar = (props) => {
     const toggle = () => setIsOpen(!isOpen);
   
     return (
-      <div>
+      <div className= "myNav">
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">
             <a href="" className="logo">
@@ -29,14 +30,13 @@ const MyNavbar = (props) => {
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem >
-                  <Search />
+                  <Search {...props}/>
                 </NavItem>
                 <NavbarToggler onClick={toggle} />
               </Nav>
             </Collapse>
           </div>
         </Navbar>
-        
       </div>
     );
   }
