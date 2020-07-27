@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux';
 
 import {
@@ -9,10 +8,10 @@ import {
 } from '../../actions/searchActions';
 
 import {
-    Input,
-    InputGroupAddon,
-    Button,
-    InputGroup
+  Input,
+  InputGroupAddon,
+  Button,
+  InputGroup
 } from 'reactstrap';
 
 export class Search extends Component {
@@ -39,7 +38,7 @@ export class Search extends Component {
                 onChange={this.onChange}
                 />
                 <InputGroupAddon addonType="append">  
-                    <Button type="submit" className="btn btn-primary btn-bg">
+                    <Button type="submit" className="btn btn-primary btn-bg"  onClick= {()=>this.props.data.hideLaningSection()}>
                         Search
                     </Button>
                 </InputGroupAddon> 
