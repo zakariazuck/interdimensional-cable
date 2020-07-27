@@ -12,7 +12,7 @@ export const searchMovie = text => dispatch => {
 
 export const fetchMovies = text => dispatch => {
   axios
-    .get(`https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${text}`)
+    .get(`https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${text.replace(/ /g,"+")}`)
     .then(response =>
       dispatch({
         type: C.FETCH_MOVIES,
