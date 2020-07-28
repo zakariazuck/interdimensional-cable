@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
+    "deep-freeze": "^0.0.1",
+    "fetch-mock": "^9.10.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -16,6 +18,7 @@
     "reactstrap": "^8.5.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
     "shaka-player": "^3.0.1"
   },
@@ -36,14 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^26.1.0",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^26.1.0"
   }
 }

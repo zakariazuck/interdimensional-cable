@@ -22,4 +22,4 @@ const mapStateToProps = state => ({
   movies: state.movies.movies
 });
 
-export default connect(mapStateToProps)(MoviesContainer);
+export default connect(mapStateToProps)(MoviesSection);
